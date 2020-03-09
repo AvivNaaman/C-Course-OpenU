@@ -9,4 +9,4 @@ _In order to run these tests, you might need to change some *.c* files:_
 3. Run from the terminal the tester, using `./tester`.
 
 ### If you get any compilation error, check you *removed your main* and the signatures are correct, in the correct files
-### In this tester: make sure there is no `main()` in match.c, which also contains the method `match(char pattern[], char text[])`. Check your parameter order.
+### In this tester: make sure there is no `main()` in `match.c`, which also contains the method `match(char pattern[], char text[])`. Check your parameter order.
