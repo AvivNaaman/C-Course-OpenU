@@ -1,0 +1,6 @@
+tester: tester.o match.o
+	gcc -g tester.o match.o -dl -ansi -Wall -o tester
+match.o: match.c
+	gcc -c match.c -dl -ansi -Wall -pedantic -o match.o
+tester.o: tester.c
+	gcc -c tester.c -dl -ansi -Wall -pedantic -o tester.o
