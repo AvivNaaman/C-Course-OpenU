@@ -46,17 +46,17 @@ void test_match()
 	assert_eq(1, match("a","ba"), method_des, 46, &cntr, &err_cntr);
 	assert_eq(19, match("a","qwertyuiopoiuytrewqa"), method_des, 47, &cntr, &err_cntr);
 	assert_eq(6, match("abcd","bbbafgdbcd"), method_des, 48, &cntr, &err_cntr);
-	assert_eq(0, match("lambda","lambda"), method_des, 49, &cntr, &err_cntr);
-	assert_eq(0, match("lambda","adbmal"), method_des, 50, &cntr, &err_cntr);
-	assert_eq(6, match("match","aathhcmftch"), method_des, 51, &cntr, &err_cntr);
-	assert_eq(0, match("match","mamah"), method_des, 52, &cntr, &err_cntr);
-	assert_eq(2, match("match","mamahch"), method_des, 53, &cntr, &err_cntr);
-
+	assert_eq(0, match("lambda","lambda"), method_des, 49, &cntr, &err_cntr); /* Perfect match */
+	assert_eq(-1, match("lambda","adbmal"), method_des, 50, &cntr, &err_cntr); /* No match at all */
+	assert_eq(-1, match("viva","hello"), method_des, 51, &cntr, &err_cntr); /* No match at all */
+	assert_eq(6, match("match","aathhcmftch"), method_des, 52, &cntr, &err_cntr);
+	assert_eq(0, match("match","mamah"), method_des, 53, &cntr, &err_cntr);
+	assert_eq(2, match("match","mamahch"), method_des, 54, &cntr, &err_cntr);
 	assert_eq(2, match("$%$","$$$%$"), method_des, 55, &cntr, &err_cntr);
 	assert_eq(3, match("^&&","@^%^&*"), method_des, 56, &cntr, &err_cntr);
 	assert_eq(2, match("465","65465"), method_des, 57, &cntr, &err_cntr);
 	assert_eq(17, match("5","1e231798uifhj89235eqwfcd"), method_des, 58, &cntr, &err_cntr);
-
+	/* Some GUIDs to test with: */
 	assert_eq(24, match("19ec77c5","267d56feaedc453a91e338f5f9ec18c5"), method_des, 60, &cntr, &err_cntr);
 	assert_eq(14, match("45a8852277","f6e1e95357294545a8b52a77a79af53e"), method_des, 61, &cntr, &err_cntr);
 	assert_eq(5, match("bc7fa9643aa","bb5f47c7ea9343abaeaf858c327dd416"), method_des, 62, &cntr, &err_cntr);
@@ -64,9 +64,11 @@ void test_match()
 	assert_eq(17, match("6681b0908aab869","c3388b96398a4837ab681b0908abb86f"), method_des, 64, &cntr, &err_cntr);
 
 	success_cntr = cntr - err_cntr;
+	printf("\n=============================================================");
 	printf("\nYour match(char[], char[]) method passed %d out of %d tests. ", success_cntr, cntr);
-	if (err_cntr == 0) printf("That's great!\n follow & feedback at https://github.com/avivnaaman/openu-20465-2020b\n");
+	if (err_cntr == 0) printf("That's great!\nFollow & feedback at https://github.com/avivnaaman/openu-20465-2020b\n");
 	else printf("See the above output for more information.\n");
+	printf("=============================================================\n");
 }
 
 void assert_eq(int expected, int actual, char location_description[], int line, int *counter, int *failed_counter)
@@ -74,7 +76,7 @@ void assert_eq(int expected, int actual, char location_description[], int line, 
 	if (expected != actual)
 	{
 		printf("\n*****************************************************\n");
-		printf("TEST FAILED! at %s, line %d.\n Expected: %d\n But Got: %d", location_description, line, expected, actual);
+		printf("TEST FAILED! at %s, line %d.\nExpected: %d\n But Got: %d", location_description, line, expected, actual);
 		printf("\n*****************************************************\n");
 		(*failed_counter)++;
 	}
