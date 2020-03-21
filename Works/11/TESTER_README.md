@@ -1,5 +1,5 @@
 # לפני שימוש בטסטר: קראו את ההוראות מטה. שימו לב, כאמור, שכל הקבצים עומדים בדרישות ואין פונקציית `main()` בקובץ `match.c`.
-# Read me before using the tests in this directory
+# Read me before using the tests
 _In order to run these tests, you might need to change some *.c* files:_
 1. Make sure your `match.c` file *does not* contain `main()` method.
 2. Make sure your method names are correct: compare then to the names at the `tester.h` file. Also make sure that the parameters order is correct.
