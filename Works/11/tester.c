@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "tester.h" /* This header file is used to declare function for the code below. You should not use it. */
+#include "tester.h" /* This header file is used to declare function for the code below. You should NOT use it. */
 
 int main()
 {
@@ -32,7 +32,6 @@ void test_match()
 	int err_cntr = 0, success_cntr, cntr = 0;
 	char method_des[] = "match(char[], char[])";
 	printf("\nTesting %s:\n", method_des);
-
 	assert_eq(1, match("viva\n","vviaaa\n"), method_des, 35, &cntr, &err_cntr);
 	assert_eq(0, match("viva\n","viva\n"), method_des, 36, &cntr, &err_cntr);
 	assert_eq(0, match("viva\n","vivaviv\n"), method_des, 37, &cntr, &err_cntr);
@@ -48,8 +47,8 @@ void test_match()
 	assert_eq(19, match("a\n","qwertyuiopoiuytrewqa\n"), method_des, 47, &cntr, &err_cntr);
 	assert_eq(6, match("abcd\n","bbbafgdbcd\n"), method_des, 48, &cntr, &err_cntr);
 	assert_eq(0, match("lambda\n","lambda\n"), method_des, 49, &cntr, &err_cntr); /* Perfect match */
-	assert_eq(-1, match("lambda\n","adbmal\n"), method_des, 50, &cntr, &err_cntr); /* No match at all */
-	assert_eq(-1, match("viva\n","hello\n"), method_des, 51, &cntr, &err_cntr); /* No match at all */
+	assert_eq(0, match("lambda\n","adbmal\n"), method_des, 50, &cntr, &err_cntr); /* No match at all */
+	assert_eq(0, match("viva\n","hello\n"), method_des, 51, &cntr, &err_cntr); /* No match at all */
 	assert_eq(6, match("match\n","aathhcmftch\n"), method_des, 52, &cntr, &err_cntr);
 	assert_eq(0, match("match\n","mamah\n"), method_des, 53, &cntr, &err_cntr);
 	assert_eq(2, match("match\n","mamahch\n"), method_des, 54, &cntr, &err_cntr);
@@ -65,11 +64,11 @@ void test_match()
 	assert_eq(17, match("6681b0908aab869","c3388b96398a4837ab681b0908abb86f"), method_des, 64, &cntr, &err_cntr);
 
 	success_cntr = cntr - err_cntr;
-	printf("\n=============================================================");
+	printf("\n===========================================================================================");
 	printf("\nYour match(char[], char[]) method passed %d out of %d tests. ", success_cntr, cntr);
 	if (err_cntr == 0) printf("That's great!\nFollow & feedback at https://github.com/avivnaaman/openu-20465-2020b\n");
 	else printf("See the above output for more information.\n");
-	printf("=============================================================\n");
+	printf("=============================================================================================\n");
 }
 
 void assert_eq(int expected, int actual, char location_description[], int line, int *counter, int *failed_counter)
