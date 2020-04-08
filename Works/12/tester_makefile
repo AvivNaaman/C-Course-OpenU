@@ -1,0 +1,8 @@
+tester: tester.o adjacency.o
+	gcc -g tester.o adjacency.o -ansi -Wall -pedantic -o tester
+
+tester.o: tester.h adjacency.h tester.c adjacency.c
+	gcc -c tester.c -ansi -Wall -pedantic -o tester.o
+
+adjacency.c: adjacency.h adjacency.c
+	gcc -c adjacency.c -ansi -Wall -pedantic -o adjacency.o
