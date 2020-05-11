@@ -80,4 +80,17 @@
  mult_comp_comp B,B
 0.00+(0.00)i
 
+ abs_comp A
+3040.00
+ abs_comp B
+0.00
+ abs_comp C
+9.55
+ abs_comp D
+9.85
+ abs_comp E
+8.37
+ abs_comp F
+1234
+
          stop
