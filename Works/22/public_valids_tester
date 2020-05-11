@@ -56,5 +56,12 @@ mult_comp_comp A,B
 mult_comp_comp F,B
 mult_comp_comp B,B
 
+abs_comp A
+abs_comp B
+abs_comp C
+abs_comp D
+abs_comp E
+abs_comp F
+
         stop
 
