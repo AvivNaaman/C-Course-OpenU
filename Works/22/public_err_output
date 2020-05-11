@@ -1,0 +1,58 @@
+ print_comp                      D              ,
+Extraneous text after command
+ print_comp           ,              E
+Illegal comma
+ print_comp            ,        F       ,
+Illegal comma
+ print_comp b
+Invalid variable name: b
+
+ read_comp D, 0,
+Extraneous text after command
+ read_comp D , 0 , 0 ,
+Extraneous text after command
+ read_comp E,,5,6
+Multiple consecutive commas
+ read_comp G,8,9
+Invalid variable name: G
+ read_comp A,4.5,5.6,C
+Extraneous text after end of command.
+
+ add_comp C,F,
+Extraneous text after command
+ add_comp ,C,F
+Illegal comma
+ add_comp , C F,
+Illegal comma
+ add_comp C,,F
+Multiple consecutive commas
+ add_comp c,F
+Invalid variable name: c
+ add_comp G,A
+Invalid variable name: G
+
+ abs_comp a
+Invalid variable name: a
+ abs_comp AA
+Invalid variable name: AA
+ abs_comp
+Missing Argument
+ abs_comp 5
+Invalid variable name: 5
+ abs_comp A,B
+Extraneous text after end of command.
+ abs_comp A,b,c
+Extraneous text after end of command.
+
+ mult_comp_real A,5,
+Extraneous text after command
+ mult_comp_real ,A 5,
+Illegal comma
+ mult_comp_real A
+Missing Argument
+ mult_comp_real A, 5 ,6
+Extraneous text after end of command.
+ mult_comp_real A, 5 6
+Missing comma.
+
+ Please exit using the stop command.

@@ -1,0 +1,60 @@
+/*
+	VALIDS TESTER for assignment 22, 2020b, BY @AvivNaaman (c).
+	NOTICE! You must obey the MIT License, which is licensing this repository.
+	In Addition, by running these tests, downloading or copying the contents of THIS file,
+	you agree to not send it as part of YOUR assignment in any way, fully or partially.
+
+	if you have any idea to improve this tester let me know and get a credit.
+*/
+
+print_comp A
+                print_comp              	           B
+    	 print_comp           	     C
+read_comp A,.5,3040
+read_comp B,2.40000,-8.10000
+read_comp C, 	   	 5.4 	 	 ,	  7.878
+read_comp D             		,9,      4
+read_comp E 		  ,	-5.896  ,  	 5.9435
+read_comp F ,-1234,0
+
+
+print_comp A
+print_comp B
+print_comp C
+print_comp D
+print_comp E
+print_comp F
+
+
+add_comp A                    ,B
+add_comp F,E
+add_comp              B ,     D
+
+sub_comp 	 	  B 	     , 	A
+sub_comp     	 E	      	,  D
+sub_comp F  ,       A
+
+mult_comp_real C        ,       0
+mult_comp_real D        ,       -1
+mult_comp_real F, 4.2
+mult_comp_real A, -2
+mult_comp_real A, -1
+mult_comp_real A, -.5
+
+mult_comp_real C,0
+mult_comp_real D, -1
+mult_comp_real          F       ,       4.2
+mult_comp_real A, -2
+mult_comp_real A, -1
+mult_comp_real A        ,        -.5
+
+mult_comp_comp A,C
+mult_comp_comp B    ,   D
+mult_comp_comp F,F
+read_comp B,0,0
+mult_comp_comp A,B
+mult_comp_comp F,B
+mult_comp_comp B,B
+
+        stop
+

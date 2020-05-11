@@ -1,0 +1,83 @@
+ print_comp A
+0.00+(0.00)i
+                 print_comp                              B
+0.00+(0.00)i
+       print_comp                  C
+0.00+(0.00)i
+ read_comp A,.5,3040
+ read_comp B,2.40000,-8.10000
+ read_comp C,                  5.4             ,        7.878
+ read_comp D                          ,9,      4
+ read_comp E            ,     -5.896  ,        5.9435
+ read_comp F ,-1234,0
+
+
+ print_comp A
+0.50+(3040.00)i
+ print_comp B
+2.40-(8.10)i
+ print_comp C
+5.40+(7.88)i
+ print_comp D
+9.00+(4.00)i
+ print_comp E
+-5.90+(5.94)i
+ print_comp F
+-1234.00+(0.00)i
+
+
+ add_comp A                    ,B
+2.90+(3031.90)i
+ add_comp F,E
+-1239.90+(5.94)i
+ add_comp              B ,     D
+11.40-(4.10)i
+
+ sub_comp               B          ,  A
+1.90-(3048.10)i
+ sub_comp              E              ,  D
+-14.90+(1.94)i
+ sub_comp F  ,       A
+-1234.50-(3040.00)i
+
+ mult_comp_real C        ,       0
+0.00+(0.00)i
+ mult_comp_real D        ,       -1
+-9.00-(4.00)i
+ mult_comp_real F, 4.2
+-5182.80+(0.00)i
+ mult_comp_real A, -2
+-1.00-(6080.00)i
+ mult_comp_real A, -1
+-0.50-(3040.00)i
+ mult_comp_real A, -.5
+-0.25-(1520.00)i
+
+ mult_comp_real C,0
+0.00+(0.00)i
+ mult_comp_real D, -1
+-9.00-(4.00)i
+ mult_comp_real          F       ,       4.2
+-5182.80+(0.00)i
+ mult_comp_real A, -2
+-1.00-(6080.00)i
+ mult_comp_real A, -1
+-0.50-(3040.00)i
+ mult_comp_real A        ,        -.5
+-0.25-(1520.00)i
+
+ mult_comp_comp A,C
+-23946.42+(16419.94)i
+ mult_comp_comp B    ,   D
+54.00-(63.30)i
+ mult_comp_comp F,F
+1522756.00+(0.00)i
+ read_comp B,0,0
+ mult_comp_comp A,B
+0.00+(0.00)i
+ mult_comp_comp F,B
+-0.00+(0.00)i
+ mult_comp_comp B,B
+0.00+(0.00)i
+
+         stop

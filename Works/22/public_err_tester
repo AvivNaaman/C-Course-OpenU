@@ -1,0 +1,40 @@
+/*
+	ERROR TESTER for assignment 22, 2020b, BY @AvivNaaman (c).
+	NOTICE! You must obey the MIT License, which is licensing this repository.
+	In Addition, by running these tests, downloading or copying the contents of THIS file,
+	you agree to not send it as part of YOUR assignment in any way, fully or partially.
+
+	if you have any idea to improve this tester let me know and get a credit.
+*/
+
+print_comp            	   D              ,
+print_comp 	 	,              E
+print_comp 	 	 , 	  F 	  ,
+print_comp b
+
+read_comp D, 0,
+read_comp D , 0 , 0 ,
+read_comp E,,5,6
+read_comp G,8,9
+read_comp A,4.5,5.6,C
+
+add_comp C,F,
+add_comp ,C,F
+add_comp , C F,
+add_comp C,,F
+add_comp c,F
+add_comp G,A
+
+abs_comp a
+abs_comp AA
+abs_comp
+abs_comp 5
+abs_comp A,B
+abs_comp A,b,c
+
+mult_comp_real A,5,
+mult_comp_real ,A 5,
+mult_comp_real A
+mult_comp_real A, 5 ,6
+mult_comp_real A, 5 6
+
