@@ -38,13 +38,11 @@ echo -e "${BLUE}${BOLD}>>> Creating files and removing access to them:${RESET}"
 # read/write to file that you have no access to:
 touch ".denied_f0"
 touch ".denied_f1"
-chmod -rwx ".denied_f0" # deny
-chmod -rwx ".denied_f1" # deny
+chmod u-rw ".denied_f0" # deny
+chmod u-rw ".denied_f1" # deny
 echo -e "${GREEN}${BOLD}>>> Done! ${RESET}"
 echo -e "${RED}${BOLD}>>> Running your program with both denied files as arguments:${RESET}"
 set -o xtrace
-./numbers .denied_f0
-./numbers .denied_f1
 ./numbers allnums_in .denied_f1
 ./numbers allnums_in .denied_f0
 set +o xtrace
