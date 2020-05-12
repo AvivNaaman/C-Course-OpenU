@@ -53,6 +53,6 @@ Missing Argument
  mult_comp_real A, 5 ,6
 Extraneous text after end of command.
  mult_comp_real A, 5 6
-Missing comma.
+Missing comma/Exteraneous text after command
 
  Please exit using the stop command.
