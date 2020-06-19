@@ -23,6 +23,7 @@ set -o xtrace
 ./numbers allnums_in
 set +o xtrace
 
+echo ""
 # two valid arguments
 echo -e "${BLUE}${BOLD}>>> Now let's save this numbers to the file allnums_out...${RESET}"
 set -o xtrace
@@ -32,8 +33,18 @@ echo -e "${GREEN}${BOLD}>>> Executed. ${RESET}"
 echo -e "${BLUE}>>> And let's view the contents of allnums_out:${RESET}"
 cat allnums_out
 
+echo ""
+echo -e "${BLUE}${BOLD}>>> Empty File as first argument:${RESET}"
+touch ".myemptyfile"
+set -o xtrace
+./numbers .myemptyfile
+set +o xtarce
+rm -rf .myemptyfile
+
+echo ""
 echo -e "${BLUE}${BOLD}>>> Now let's test some edge cases. ${RESET}"
 echo -e "${RED}${BOLD}>>> This part will not run well on NOT 100% linux machines:${RESET}"
+echo ""
 echo -e "${BLUE}${BOLD}>>> Creating files and removing access to them:${RESET}"
 # read/write to file that you have no access to:
 touch ".denied_f0"
@@ -51,6 +62,7 @@ chmod +rwx ".denied_f0" # allow
 chmod +rwx ".denied_f1" # allow
 rm -rf .denied_f* # delete
 
+echo ""
 # file that doesn't exist
 echo -e "${BLUE}${BOLD}>>> Now file that doesn't exist:${RESET}"
 set -o xtrace
