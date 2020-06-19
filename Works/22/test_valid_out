@@ -1,0 +1,92 @@
+Type a command and press enter to execute:
+>> print_comp A
+0.00+(0.00)i
+>>                 print_comp              	          B
+0.00+(0.00)i
+>>     	 print_comp           	     C
+0.00+(0.00)i
+>> read_comp A,5,3
+>> read_comp B,2.4,-8.9
+>> read_comp C, 	  	 5.6 	 	 ,	 7.8
+>> read_comp D            		,9,      4
+>> read_comp E 		  ,	-5.498764  ,  	 3.694123
+>> read_comp F ,-8888,0
+>> 
+>> 
+>> print_comp A
+5.00+(3.00)i
+>> print_comp B
+2.40-(8.90)i
+>> print_comp C
+5.60+(7.80)i
+>> print_comp D
+9.00+(4.00)i
+>> print_comp E
+-5.50+(3.69)i
+>> print_comp F
+-8888.00+(0.00)i
+>> 
+>> add_comp A                   ,B
+7.40-(5.90)i
+>> add_comp           	B,A
+7.40-(5.90)i
+>> add_comp C,F
+-8882.40+(7.80)i
+>> add_comp F,E
+-8893.50+(3.69)i
+>> add_comp           B ,     D
+11.40-(4.90)i
+>> 
+>> sub_comp 	 	 B 	 , 	A
+-2.60-(11.90)i
+>> sub_comp  A  ,  B
+2.60+(11.90)i
+>> sub_comp  	 E	  	,  D
+-14.50-(0.31)i
+>> sub_comp C,E
+11.10+(4.11)i
+>> sub_comp F,A
+-8893.00-(3.00)i
+>> 
+>> mult_comp_real A,1
+5.00+(3.00)i
+>> mult_comp_real B , 5.4
+12.96-(48.06)i
+>> mult_comp_real C    ,0
+0.00+(0.00)i
+>> mult_comp_real D    , -1
+-9.00-(4.00)i
+>> mult_comp_real F    , -4.2
+37329.60+(0.00)i
+>> mult_comp_real E,   435
+-2391.96+(1606.94)i
+>> 
+>> 
+>> mult_comp_img A,1
+-3.00+(5.00)i
+>> mult_comp_img B ,    5.4
+48.06+(12.96)i
+>> mult_comp_img C,    0
+-0.00+(0.00)i
+>> mult_comp_img D     , -1
+4.00-(9.00)i
+>> mult_comp_img F     , -4.2
+0.00+(37329.60)i
+>> mult_comp_img   E ,     435
+-1606.94-(2391.96)i
+>> 
+>> mult_comp_comp   A     ,  B
+38.70-(37.30)i
+>> mult_comp_comp         C,D
+19.20+(92.60)i
+>> mult_comp_comp      E,  F
+48873.01-(32833.37)i
+>> read_comp F  , 0 ,  0
+>> mult_comp_comp A , F
+0.00+(0.00)i
+>> mult_comp_comp F , F
+0.00+(0.00)i
+>> 
+>>         stop
+
+Goodbye!
