@@ -1,0 +1,63 @@
+NOTICE! Format is <filename>:<line>: <message>
+fpass_errors.as:26: String must be defined between quotation marks
+fpass_errors.as:27: Unexpected comma after .data instruction
+fpass_errors.as:27: Expected integer for .data instruction (got '')
+fpass_errors.as:28: Multiple consecutive commas.
+fpass_errors.as:29: Missing data after comma
+fpass_errors.as:31: Expected integer for .data instruction (got '1.9')
+fpass_errors.as:32: Expected integer for .data instruction (got '-0.1')
+fpass_errors.as:33: Expected integer for .data instruction (got '.1')
+fpass_errors.as:34: Expected integer for .data instruction (got '1.')
+fpass_errors.as:37: Operation requires 2 operands (got 0)
+fpass_errors.as:38: Operation requires 2 operands (got 1)
+fpass_errors.as:39: Too many operands for operation (got >2)
+fpass_errors.as:40: Operation requires 2 operands (got 0)
+fpass_errors.as:41: Too many operands for operation (got >2)
+fpass_errors.as:42: Operation requires 2 operands (got 1)
+fpass_errors.as:43: Operation requires 2 operands (got 1)
+fpass_errors.as:44: Operation requires 1 operand (got 0)
+fpass_errors.as:45: Operation requires 1 operand (got 0)
+fpass_errors.as:46: Too many operands for operation (got >2)
+fpass_errors.as:47: Operation requires 1 operand (got 0)
+fpass_errors.as:48: Operation requires 1 operand (got 0)
+fpass_errors.as:50: Operation requires 1 operand (got 0)
+fpass_errors.as:52: Operation requires 1 operand (got 0)
+fpass_errors.as:53: Operation requires no operands (got 1)
+fpass_errors.as:54: Operation requires no operands (got 1)
+fpass_errors.as:59: Invalid addressing mode for first operand.
+fpass_errors.as:60: Invalid addressing mode for first operand.
+fpass_errors.as:61: Invalid addressing mode for second operand.
+fpass_errors.as:62: Invalid addressing mode for first operand.
+fpass_errors.as:63: Invalid addressing mode for second operand.
+fpass_errors.as:64: Invalid addressing mode for second operand.
+fpass_errors.as:66: Invalid addressing mode for first operand.
+fpass_errors.as:67: Invalid addressing mode for first operand.
+fpass_errors.as:68: Invalid addressing mode for second operand.
+fpass_errors.as:70: Invalid addressing mode for first operand.
+fpass_errors.as:71: Invalid addressing mode for first operand.
+fpass_errors.as:72: Invalid addressing mode for second operand.
+fpass_errors.as:73: Invalid addressing mode for second operand.
+fpass_errors.as:74: Invalid addressing mode for second operand.
+fpass_errors.as:76: Invalid addressing mode for first operand.
+fpass_errors.as:77: Invalid addressing mode for first operand.
+fpass_errors.as:78: Invalid addressing mode for first operand.
+fpass_errors.as:79: Invalid addressing mode for second operand.
+fpass_errors.as:80: Invalid addressing mode for second operand.
+fpass_errors.as:82: Invalid addressing mode for first operand.
+fpass_errors.as:83: Invalid addressing mode for first operand.
+fpass_errors.as:84: Invalid addressing mode for first operand.
+fpass_errors.as:85: Invalid addressing mode for first operand.
+fpass_errors.as:86: Invalid addressing mode for first operand.
+fpass_errors.as:88: Invalid addressing mode for first operand.
+fpass_errors.as:89: Invalid addressing mode for first operand.
+fpass_errors.as:90: Invalid addressing mode for first operand.
+fpass_errors.as:91: Invalid addressing mode for first operand.
+fpass_errors.as:92: Invalid addressing mode for first operand.
+fpass_errors.as:96: Invalid addressing mode for first operand.
+fpass_errors.as:98: Invalid addressing mode for first operand.
+fpass_errors.as:101: Invalid addressing mode for first operand.
+fpass_errors.as:102: Operation requires 2 operands (got 1)
+fpass_errors.as:103: Operation requires 2 operands (got 1)
+fpass_errors.as:104: Operation requires 2 operands (got 1)
+fpass_errors.as:106: Unrecognized instruction: op.
+fpass_errors.as:107: Unrecognized instruction: label.

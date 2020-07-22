@@ -1,0 +1,19 @@
+spass_errors.as:10: Symbol MyFirstString for .entry instruction not found.
+spass_errors.as:15: Symbol EMathFactsTERNLABEL for .entry instruction not found.
+spass_errors.as:18: Symbol MyFirstString not found
+spass_errors.as:20: Symbol MyOtherOtherStringS not found
+spass_errors.as:21: Symbol YSTRING not found
+spass_errors.as:22: Symbol MYSTRIN not found
+spass_errors.as:23: Symbol MyOtherOtherString0 not found
+spass_errors.as:24: Symbol MyOtherOtherString123 not found
+spass_errors.as:26: Symbol MathFactsMathFacts not found
+spass_errors.as:28: Symbol Y not found
+spass_errors.as:29: Symbol MathFacts0 not found
+spass_errors.as:31: Symbol SOMEUNKNOWNLABEL for .entry instruction not found.
+spass_errors.as:32: Symbol 0DataIsNice for .entry instruction not found.
+spass_errors.as:33: Symbol DataIsNice0 for .entry instruction not found.
+spass_errors.as:34: Symbol 0 for .entry instruction not found.
+spass_errors.as:35: Symbol 0MyOtherOtherString for .entry instruction not found.
+spass_errors.as:37: Symbol NULL for .entry instruction not found.
+spass_errors.as:43: Symbol IgnoreMe not found
+spass_errors.as:44: Symbol IgnoreMe not found
