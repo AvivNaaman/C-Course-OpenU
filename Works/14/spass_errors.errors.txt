@@ -17,3 +17,7 @@ spass_errors.as:35: Symbol 0MyOtherOtherString for .entry instruction not found.
 spass_errors.as:37: Symbol NULL for .entry instruction not found.
 spass_errors.as:43: Symbol IgnoreMe not found
 spass_errors.as:44: Symbol IgnoreMe not found
+NOTICE: Last 2 errors may be different:
+  1) Label without instruction may be first pass error.
+  2) If you decided to allow multiple-line symbol definition (symbol and content on different lines) it may not be a problem at all, or maybe warning.
+  * It's your decision! Thx Elad Shoshani
